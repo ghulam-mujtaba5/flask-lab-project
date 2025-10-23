@@ -13,8 +13,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      with:
-        path: main
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -30,7 +28,7 @@ jobs:
     - name: Run tests
       working-directory: main
       run: |
-        pytest -q
+        pytest -q tests/
 
     - name: Build Docker image
       working-directory: main
