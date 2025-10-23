@@ -1,0 +1,218 @@
+/* Flask Lab Project - Main Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #667eea;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.api-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.api-section h2 {
+    color: #764ba2;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.endpoint {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.endpoint-method {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #667eea;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.endpoint-path {
+    font-family: 'Courier New', monospace;
+    color: #764ba2;
+    font-weight: bold;
+}
+
+.endpoint-description {
+    margin-top: 10px;
+    color: #666;
+}
+
+.test-form {
+    margin-top: 30px;
+    padding: 20px;
+    background: #e3f2fd;
+    border-radius: 10px;
+}
+
+.test-form h3 {
+    color: #1976d2;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.response {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #4caf50;
+    display: none;
+}
+
+.response.error {
+    border-color: #f44336;
+}
+
+.response pre {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.team-info {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff3e0;
+    border-radius: 10px;
+}
+
+.team-info h3 {
+    color: #f57c00;
+    margin-bottom: 15px;
+}
+
+.team-member {
+    padding: 10px;
+    margin: 5px 0;
+    background: white;
+    border-radius: 5px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    background: #667eea;
+    color: white;
+    border-radius: 3px;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .endpoint-method {
+        display: block;
+        margin-bottom: 5px;
+    }
+}

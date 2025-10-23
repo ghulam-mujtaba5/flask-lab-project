@@ -3,10 +3,76 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Flask Lab Project</title>
+    <title>Flask Lab Project - CI/CD with Docker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   </head>
   <body>
-    <h1>Hello from Flask Lab</h1>
-    <p>Use the /health and /data endpoints for tests.</p>
+    <div class="container">
+      <h1>🚀 Flask Lab Project</h1>
+      <p class="subtitle">Collaborative Development with CI/CD & Docker</p>
+      
+      <div class="api-section">
+        <h2>📡 Available API Endpoints</h2>
+        
+        <div class="endpoint">
+          <span class="endpoint-method">GET</span>
+          <span class="endpoint-path">/</span>
+          <p class="endpoint-description">Homepage - You are here!</p>
+        </div>
+        
+        <div class="endpoint">
+          <span class="endpoint-method">GET</span>
+          <span class="endpoint-path">/health</span>
+          <p class="endpoint-description">Health check endpoint - Returns "OK" if server is running</p>
+          <button id="healthCheck" class="btn" style="margin-top: 10px;">Test Health Check</button>
+        </div>
+        
+        <div class="endpoint">
+          <span class="endpoint-method">POST</span>
+          <span class="endpoint-path">/data</span>
+          <p class="endpoint-description">Accepts JSON data and echoes it back with a confirmation message</p>
+        </div>
+      </div>
+      
+      <div class="test-form">
+        <h3>🧪 Test the /data Endpoint</h3>
+        <form id="testForm">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
+          </div>
+          
+          <button type="submit" class="btn">Send Data</button>
+        </form>
+        
+        <div id="response" class="response"></div>
+      </div>
+      
+      <div class="team-info">
+        <h3>👥 Team Members</h3>
+        <div class="team-member">
+          <strong>Muhammad Waqar ul Mulk</strong> 
+          <span class="badge">Backend Lead</span>
+          <br><small>FA22-BSE-153 - Core Flask routes and business logic</small>
+        </div>
+        <div class="team-member">
+          <strong>Ghulam Mujtaba</strong> 
+          <span class="badge">Frontend Lead</span>
+          <br><small>FA22-BSE-199 - Templates, static files, and API integration</small>
+        </div>
+        <div class="team-member">
+          <strong>Member 3</strong> 
+          <span class="badge">DevOps Engineer</span>
+          <br><small>Docker, Testing, and CI/CD Pipeline</small>
+        </div>
+      </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
   </body>
 </html>
