@@ -18,11 +18,19 @@ flask_lab_project/
 - member2_frontend/: Frontend work folder
 - member3_devops/: DevOps & CI/CD work folder
 
-Roles
+## Team Members
 
-- Member 1 (Backend Lead): Implemented core Flask routes in `main/app.py`.
-- Member 2 (Frontend/API Integration): Added `templates/index.html` and can extend static files.
-- Member 3 (DevOps Engineer): Created `Dockerfile` and `.github/workflows/ci-cd.yml`.
+- **Member 1 (Backend Lead)**: Muhammad Waqar ul Mulk (FA22-BSE-153)
+  - Implements core Flask routes in `main/app.py`
+  - Works in `member1_backend/` directory
+  
+- **Member 2 (Frontend/API Integration)**: Ghulam Mujtaba (FA22-BSE-199)
+  - Works on `templates/`, `static/` files and API endpoints
+  - Works in `member2_frontend/` directory
+  
+- **Member 3 (DevOps Engineer)**: [Your Name]
+  - Handles `Dockerfile`, testing, and `.github/workflows/ci-cd.yml`
+  - Works in `member3_devops/` directory
 
 How to run locally
 
